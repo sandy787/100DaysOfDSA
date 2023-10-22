@@ -44,4 +44,7 @@ int main(){
         cout<<i<<" ";
     }
     
+
+    //Initialize with size 
+    vector<int> scores(5);
 }
