@@ -98,21 +98,22 @@ int main(){
     l.insertatStart(5);
     l.insertatStart(6);
     
+    cout<<"Initial linked list:                        ";
     l.display();
     cout<<endl;
-
+    cout<<"Initial linked after deleting at start:     ";
     l.delete_atStart();
     l.display();
     cout<<endl;
-
+    cout<<"Initial linked after deleting at end:       ";
     l.delete_atEnd();
     l.display();
     cout<<endl;
-
+    cout<<"Initial linked after deleting at index 3:   ";
     l.delete_at(3);
     l.display();
     cout<<endl;
-
+    cout<<"Initial linked after inserting 1 at index 2:";
     l.insert_at(1,2);
     l.display();
 
