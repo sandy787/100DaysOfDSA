@@ -1,3 +1,10 @@
-l.insertatStart(4);
-    // l.insertatStart(3);
-    // l.insertatEnd(2);
+void delete_at(int index){
+        Node *temp=head;
+        for(int i = 1; i < index; i++)
+        {   
+            temp=temp->next;
+        }
+        Node *ptr=temp->next->next;
+        temp->next->next=NULL;
+        temp->next=ptr;
+    }

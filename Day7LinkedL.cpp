@@ -58,9 +58,12 @@ class LinkedList{
     }       
 
     void delete_atStart(){
+        Node *todelete=head;
         Node *temp=head->next;
-        head->next=NULL;
+        todelete->next=NULL;
         head=temp;
+        delete(todelete);
+
     }
     
     void delete_atEnd(){
@@ -68,7 +71,9 @@ class LinkedList{
         while(temp->next->next!=NULL){
             temp=temp->next;
         }
+        Node* todelete=temp->next;
         temp->next=NULL;
+        delete(todelete);
     }
 
     void delete_at(int index){
@@ -78,8 +83,10 @@ class LinkedList{
             temp=temp->next;
         }
         Node *ptr=temp->next->next;
+        Node *todelete=temp->next;
         temp->next->next=NULL;
         temp->next=ptr;
+        delete(todelete);
     }
 
 
