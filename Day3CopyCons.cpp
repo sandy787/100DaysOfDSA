@@ -17,7 +17,7 @@ class Student{
     }
 };
 int main(){
-    Student a(101,"Ram");
+    class Student a(101,"Ram");
     a.display();
     Student b(a);
     b.display();
