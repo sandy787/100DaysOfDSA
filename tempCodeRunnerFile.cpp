@@ -1,10 +1,4 @@
-void delete_at(int index){
-        Node *temp=head;
-        for(int i = 1; i < index; i++)
-        {   
-            temp=temp->next;
-        }
-        Node *ptr=temp->next->next;
-        temp->next->next=NULL;
-        temp->next=ptr;
-    }
+int A[]={4,6,2,3,8,6,9};
+    // for(int i: A){
+    //     InsertBST(root,i);
+    // }
