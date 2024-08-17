@@ -95,27 +95,27 @@ int main() {
     cin >> n;
       
     
-    // switch (ch) {
-    //     case 1:
-    //         cout << "Enter " << n << " elements for inserting at the start:\n";
-    //         for (int i = 0; i < n; i++) {
-    //             cout << "Enter element: ";
-    //             cin >> ele;
-    //             l.insertatStart(ele);
-    //         }
-    //         break;
-    //     case 2:
-    //         cout << "Enter " << n << " elements for inserting at the end:\n";
-    //         for (int i = 0; i < n; i++) {
-    //             cout << "Enter element: ";
-    //             cin >> ele;
-    //             l.insertatEnd(ele);
-    //         }
-    //         break;
-    //     default:
-    //         cout << "Invalid choice" << endl;
-    //         break;
-    // }
+    switch (ch) {
+        case 1:
+            cout << "Enter " << n << " elements for inserting at the start:\n";
+            for (int i = 0; i < n; i++) {
+                cout << "Enter element: ";
+                cin >> ele;
+                l.insertatStart(ele);
+            }
+            break;
+        case 2:
+            cout << "Enter " << n << " elements for inserting at the end:\n";
+            for (int i = 0; i < n; i++) {
+                cout << "Enter element: ";
+                cin >> ele;
+                l.insertatEnd(ele);
+            }
+            break;
+        default:
+            cout << "Invalid choice" << endl;
+            break;
+    }
 
     cout << "Linked List after insertion: ";
     l.display();
